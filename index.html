@@ -158,22 +158,22 @@
             </span>
             <!-- Huggingface Demo Link. -->
             <span class="link-block">
-              <a href="" target="_blank"
+              <a href="https://vbench-t2v-leaderboard.hf.space/" target="_blank"
                 class="external-link button is-normal is-rounded is-dark">
-                <!-- <span class="icon">
-                  <i class="fab fa-face-smiling-hands"></i>
-                </span> -->
+                <span class="icon">
+                  <img src="assets/vbench/hf-logo.svg" style="display:block;width:330px;height:240px" />
+                </span>
                 <span>Huggingface Demo</span>
               </a>
             </span>
             <!-- Dataset Link. -->
-            <span class="link-block">
+            <!-- <span class="link-block">
               <a href="" class="external-link button is-normal is-rounded is-dark">
                 <span class="icon">
                   <i class="far fa-images"></i>
                 </span>
                 <span>Dataset</span>
-              </a>
+              </a> -->
           </div>
 
         </div>
@@ -211,9 +211,6 @@
             </div>
           </div>
         </div>
-        <!-- <p>
-          Given exemplar images and their entities' coarse descriptions, our <b>ReVersion framework</b> optimizes the relation prompt <b>&#60R&#62</b> to capture the relation that co-exists in all the exemplar images. During optmization, the <em>relation-focal importance sampling</em> strategy encourages <b>&#60R&#62</b> to focus on high-level relations, and the <em>relation-steering contrastive Learning</em> scheme induces the relation prompt <b>&#60R&#62</b> towards our <em>preposition prior</em> and away from entities or appearances. Upon optimization, <b>&#60R&#62</b> can be used as a word in new sentences to make novel entities interact via the relation in exemplar images. 
-        </p> -->
         <p style="margin-top: 0;">
           We visualize the evaluation results of four video generation models in 16 VBench dimensions. We normalize the results per dimension for clearer comparisons.
         </p>
@@ -263,7 +260,7 @@
 </section>
 
 
-<section class="section" style="margin-top:-50px; margin-bottom:-70px;">
+<!-- <section class="section" style="margin-top:-50px; margin-bottom:-70px;">
   <div class="hero-body">
     <div class="container is-max-desktop">
 
@@ -309,29 +306,6 @@
               <td style="text-align: center;">0.5857</td>
               <td style="text-align: center;">0.8225</td>
             </tr>
-          <!-- <tbody>
-            <tr>
-              <td scope="col" style="text-align: center;"><b>LaVie</b></td>
-              <td scope="col" style="text-align: center;"><b>0.9830</b></td>
-              <td scope="col" style="text-align: center;"><b>0.8759</b></td>
-              <td scope="col" style="text-align: center;"><b>0.9747</b></td>
-              <td scope="col" style="text-align: center;"><b>0.9769</b></td>
-              <td scope="col" style="text-align: center;"><b>0.7194</b></td>
-              <td scope="col" style="text-align: center;">0.5494</td>
-              <td scope="col" style="text-align: center;"><b>0.6190</b></td>
-              <td scope="col" style="text-align: center;"><b>0.9182</b></td>
-            </tr>
-            <tr>
-              <td scope="col" style="text-align: center;"><b>ModelScope</b></td>
-              <td scope="col" style="text-align: center;">0.9828</td>
-              <td scope="col" style="text-align: center;">0.8265</td>
-              <td scope="col" style="text-align: center;">0.9529</td>
-              <td scope="col" style="text-align: center;">0.9755</td>
-              <td scope="col" style="text-align: center;">0.7861</td>
-              <td scope="col" style="text-align: center;">0.5206</td>
-              <td scope="col" style="text-align: center;">0.5857</td>
-              <td scope="col" style="text-align: center;">0.8225</td>
-            </tr> -->
             <tr>
               <td scope="col" style="text-align: center;"><b>VideoCrafter</b></td>
               <td scope="col" style="text-align: center;">0.8624</td>
@@ -427,7 +401,7 @@
 
     </div>
   </div>
-</section>
+</section> -->
 
 
 
@@ -441,8 +415,6 @@
       <div class="section-title">
         <h2 class="title is-3">Video Quality Dimensions</h2>
         <h2 class="subtitle has-text-centered">Display of Evaluation Examples in Different Dimensions.<br>(the larger score denotes a better performance)</h2>
-        <!-- <h2 class="subtitle has-text-centered">(the larger the better)</h2> -->
-        <!-- <h3>(the larger the better)</h3> -->
       </div>
       <!-- Single Line -->
       <div id="results-carousel-face" class="carousel results-carousel">
@@ -534,33 +506,6 @@
 
 
 
-<!-- <section class="hero is-light is-small">
-  <div class="hero-body">
-
-
-    <div class="container is-max-desktop"   style="margin-top:30px;">
-
-      <div class="section-title">
-        <h2 class="title is-3">Radar Graph</h2>
-      </div> -->
-
-      <!-- <h2 class="subtitle has-text-centered">The relation inverted by ReVersion can be applied robustly to related entities in scenes with diverse backgrounds or styles.</h2> -->
-      
-      <!-- <div class="hero-body">
-        <img src="assets/vbench/images/dim_results/fig_paper_radar_big_new.png" style="width: 500px; margin-bottom: 0; margin-left: 20%" alt="Teaser."/>
-      <p style="margin-top: 0;">
-        Figure 1: <b>Visualisation of the performance of the 4 models on different dimensions.</b>
-      </p>
-      <p class="is-size-7" style="margin-top: 0;">
-        The values have been normalized for better readability of the chart. The normalization process involves scaling each set of performance values to a common scale between 0.3 and 0.8. The formula used for normalization is: (value - min_value) / (max_value - min_value).
-    </p>
-</div>
-      </div>
-    </div>    
-
-</section> -->
-
-
 <!-- prompt_suite_stats -->
 <section class="section" style="margin-top:-50px; margin-bottom:-50px;">
   <div class="container is-max-desktop">
@@ -582,31 +527,6 @@
     </div>
   </div>
 </section>
-
-<!-- <section class="section" style="margin-top:-50px; margin-bottom:-70px;">
-  <div class="hero-body">
-
-
-    <div class="container is-max-desktop"   style="margin-top:30px;">
-
-      <div class="section-title">
-        <h2 class="title is-3">Prompt Suite Statistic</h2>
-      </div> -->
-
-      <!-- <h2 class="subtitle has-text-centered">The relation inverted by ReVersion can be applied robustly to related entities in scenes with diverse backgrounds or styles.</h2> -->
-      
-      <!-- <div class="hero-body">
-        <img src="assets/vbench/images/dim_results/prompt_suite_stats.png" style="width: 500px; margin-bottom: 0; margin-left: 20%" alt="Teaser."/>
-      <p style="margin-top: 0;">
-        Figure 2: the two graphs provide an overview of our prompt suites. <b>Left: </b>the word cloud to visualize word distribution of our prompt suites. <b>Right: </b>the
-        number of prompts across different evaluation dimensions and different content categories
-      </p>
-</div>
-      </div>
-    </div>    
-
-</section> -->
-
 
 
 
@@ -633,30 +553,6 @@
   </div>
 </section>
 
-<!-- <section class="section" style="margin-top:-50px; margin-bottom:-70px;"> -->
-  <!-- <div class="hero-body">
-
-
-    <div class="container is-max-desktop"   style="margin-top:30px;">
-
-      <div class="section-title">
-        <h2 class="title is-3">Radar Graph</h2>
-      </div>
-
-      
-      <div class="hero-body">
-        <img src="assets/vbench/images/dim_results/fig_paper_radar_combine.png" style="width: 500px; margin-bottom: 0; margin-left: 20%" alt="Teaser."/>
-      <p style="margin-top: 0;">
-        Figure 2: <b>Visualisation of the performance of the 7 models
-          on different dimensions.</b>
-      </p>
-      <p class="is-size-7" style="margin-top: 0;">
-        The values have been normalized for better readability of the chart. The normalization process involves scaling each set of performance values to a common scale between 0.3 and 0.8. The formula used for normalization is: (value - min_value) / (max_value - min_value).
-</div>
-      </div>
-    </div>    
-
-</section> -->
 
 <!-- Radar_per_Class -->
 <section class="section" style="margin-top:-50px; margin-bottom:-50px;">
@@ -681,118 +577,6 @@
   </div>
 </section>
 
-<!-- <section class="hero is-light is-small">
-  <div class="hero-body">
-
-
-    <div class="container is-max-desktop"   style="margin-top:30px;">
-
-      <div class="section-title">
-        <h2 class="title is-3">Radar Graph By Class</h2>
-      </div>
-
-      
-      <div class="hero-body">
-        <img src="assets/vbench/images/dim_results/fig_paper_radar_per_class_new.png" style="width: 1000px; margin-bottom: 0; margin-left: 0%" alt="Teaser."/>
-      <p style="margin-top: 0;">
-        Figure 3: <b>Visualisation of the performance of models on different dimensions across different classes.</b> 
-      </p>
-      <p class="is-size-7" style="margin-top: 0;">
-        We normalized the values across each dimensions for better readability of the chart. The normalization process involves scaling each set of performance values to a common scale between 0.3 and 0.8. The formula used for normalization is: (value - min_value) / (max_value - min_value).
-</div>
-      </div>
-    </div>    
-
-</section> -->
-
-
-
-<!-- <section class="hero teaser">
-  <div class="container is-max-desktop">
-      <div class="hero-body">
-            <img src="assets/vbench/images/fig_paper_radar_big.jpg" style="width: 500px; margin-bottom: 0; margin-left: 25%" alt="Teaser."/>
-      <p style="margin-top: 0;">
-        Figure 1: <b>The radar chart helps to visually represent the performance evaluation of four different models in 16 perspective.</b> Each spoke in the radar chart corresponds to a specific performance metric.
-      </p>
-      <p class="is-size-7" style="margin-top: 0;">
-        The values have been normalized for better readability of the chart. The normalization process involves scaling each set of performance values to a common scale between 0 and 1. The formula used for normalization is: (value - min_value) / (max_value - min_value).
-      </p>
-    </div>
-  </div>
-</section> -->
-
-
-<!-- <section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <img src="assets/vbench/images/fig_paper_radar_per_class.jpg" style="width:1000px; margin-top:20px;"
-                   alt="Teaser."/>
-      <p>
-        Figure 3: <b>The radar chart helps to visually represent the performance evaluation of four different models in 14 perspective.</b> Each spoke in the radar chart corresponds to a specific performance metric.
-      </p>
-      <p class="is-size-7">
-        The values have been normalized for better readability of the chart. The normalization process involves scaling each set of performance values to a common scale between 0 and 1. The formula used for normalization is: (value - min_value) / (max_value - min_value).
-      </p>
-    </div>
-  </div>
-</section> -->
-
-<!-- Paper video. -->
-<!-- <section class="hero is-light is-small">
-  <div class="columns is-centered has-text-centered"  style="margin-top: 10px; margin-bottom: 20px;">
-    <div class="column is-three-fifths">
-      <h2 class="title is-3">Video</h2>
-      <div class="publication-video">
-        <iframe src="https://www.youtube.com/embed/pkal3yjyyKQ" frameborder="10"
-          allow="autoplay; encrypted-media" width="50%" allowfullscreen></iframe>
-      </div>
-
-    </div>
-  </div>
-</section> -->
-<!-- / Paper video.   -->
-
-
-
-<!-- Abstract. -->
-<!-- <section>
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered" style="margin-top: 10px; margin-bottom: 0px;">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <p>
-              Diffusion models gain increasing popularity for their generative capabilities. Recently, there have been surging needs to generate customized images by inverting diffusion models from exemplar images. However, existing inversion methods mainly focus on capturing object appearances. How to invert object relations, another important pillar in the visual world, remains unexplored. In this work, we propose ReVersion for the Relation Inversion task, which aims to learn a specific relation (represented as "relation prompt") from exemplar images. Specifically, we learn a relation prompt from a frozen pre-trained text-to-image diffusion model. The learned relation prompt can then be applied to generate relation-specific images with new objects, backgrounds, and styles. 
-              <br><br>    
-              Our key insight is the "preposition prior" - real-world relation prompts can be sparsely activated upon a set of basis prepositional words. Specifically, we propose a novel relation-steering contrastive learning scheme to impose two critical properties of the relation prompt: 1) The relation prompt should capture the interaction between objects, enforced by the preposition prior. 2) The relation prompt should be disentangled away from object appearances. We further devise relation-focal importance sampling to emphasize high-level interactions over low-level appearances (e.g., texture, color). To comprehensively evaluate this new task, we contribute ReVersion Benchmark, which provides various exemplar images with diverse relations. Extensive experiments validate the superiority of our approach over existing methods across a wide range of visual relations.
-          </p>
-        </div>
-      </div>
-    </div>
-</section> -->
-<!--/ Abstract. -->
-
-<!--/ Framework. -->
-<!-- <section class="section" style="margin-top:-50px; margin-bottom:-50px;">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-        <div class="section-title">
-          <h2 class="title is-3 is-centered">ReVersion Framework</h2>
-        </div>
-        <div class="columns is-centered has-text-centered">
-          <div class="column">
-            <div class="publication-img">
-              <img id="architecture" src="assets/reversion/images/fig_framework.jpg" style="width:1000px; margin-top:10px;margin-bottom:10px;"/>
-            </div>
-          </div>
-        </div>
-        <p>
-          Given exemplar images and their entities' coarse descriptions, our <b>ReVersion framework</b> optimizes the relation prompt <b>&#60R&#62</b> to capture the relation that co-exists in all the exemplar images. During optmization, the <em>relation-focal importance sampling</em> strategy encourages <b>&#60R&#62</b> to focus on high-level relations, and the <em>relation-steering contrastive Learning</em> scheme induces the relation prompt <b>&#60R&#62</b> towards our <em>preposition prior</em> and away from entities or appearances. Upon optimization, <b>&#60R&#62</b> can be used as a word in new sentences to make novel entities interact via the relation in exemplar images. 
-        </p>
-    </div>
-  </div>
-</section> -->
-
 
 
 <!-- BibTeX -->
@@ -815,10 +599,10 @@
   <div class="container">
     <div class="content has-text-centered">
       <a class="icon-link"
-         href="https://arxiv.org/abs/2303.13495">
+         href="https://vchitect.github.io/VBench-project/">
         <i class="fas fa-file-pdf"></i>
       </a>
-      <a class="icon-link" href="https://github.com/ziqihuangg/ReVersion" class="external-link" disabled>
+      <a class="icon-link" href="https://github.com/Vchitect/VBench" class="external-link" disabled>
         <i class="fab fa-github"></i>
       </a>
     </div>
