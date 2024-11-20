@@ -191,12 +191,24 @@
 
 
 <!-- teaser -->
-<section class="hero teaser">
+<!-- <section class="hero teaser">
   <div class="container is-max-desktop">
       <div class="hero-body">
             <img src="assets/vbench/images/dim_results/fig_teaser_new.jpg" style="width:1000px; margin-bottom:10px" alt="Teaser."/>
       <p style="margin-top: 0;">
         <b>Overview of VBench.</b> We propose VBench, a comprehensive benchmark suite for video generative models. We design a comprehensive and hierarchical <b>Evaluation Dimension Suite</b> to decompose "video generation quality" into multiple well-defined dimensions to facilitate fine-grained and objective evaluation. For each dimension and each content category, we carefully design a <b>Prompt Suite</b> as test cases, and sample <b>Generated Videos</b> from a set of video generation models. For each evaluation dimension, we specifically design an <b>Evaluation Method Suite</b>, which uses carefully crafted method or designated pipeline for automatic objective evaluation. We also conduct <b>Human Preference Annotation</b> for the generated videos for each dimension, and show that VBench evaluation results are <b>well aligned with human perceptions</b>. VBench provides valuable insights and will be open-sourced.
+      </p>
+    </div>
+  </div>
+</section> -->
+
+<!-- teaser -->
+<section class="hero teaser">
+  <div class="container is-max-desktop" style="width: 50%; max-width: none;">
+      <div class="hero-body">
+            <img src="assets/vbench/images/dim_results/fig_extention_teaser.jpg" style="width:100%; margin-bottom:10px" alt="Teaser."/>
+      <p style="margin-top: 0;">
+        <b>Overview of VBench.</b> We propose VBench, a comprehensive benchmark suite for video generative models. We design a comprehensive and hierarchical <b>Evaluation Dimension Suite</b> to decompose "video generation quality" into multiple well-defined dimensions to facilitate fine-grained and objective evaluation. For each dimension and each content category, we carefully design a <b>Prompt Suite</b> as test cases, and sample <b>Generated Videos</b> from a set of video generation models. For each evaluation dimension, we specifically design an <b>Evaluation Method Suite</b>, which uses carefully crafted method or designated pipeline for automatic objective evaluation. We also conduct <b>Human Preference Annotation</b> for the generated videos for each dimension, and show that VBench evaluation results are <b>well aligned with human perceptions</b>. VBench can provide valuable insights from multiple perspectives. <b>VBench++</b> supports a wide range of video generation tasks, including text-to-video and image-to-video, with an adaptive Image Suite for fair evaluation across different settings. It evaluates not only technical quality but also the trustworthiness of generative models, offering a comprehensive view of model performance. We continually incorporate more video generative models into VBench to inform the community about the evolving landscape of video generation.
       </p>
     </div>
   </div>
@@ -219,7 +231,7 @@
 
 
 <!-- Abstract. -->
-<section>
+<!-- <section>
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered" style="margin-top: 10px; margin-bottom: 0px;">
       <div class="column is-four-fifths">
@@ -231,8 +243,25 @@
         </div>
       </div>
     </div>
+</section> -->
+<!--/ Abstract. -->
+
+<!-- Abstract. -->
+<section>
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered" style="margin-top: 10px; margin-bottom: 0px;">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3 is-centered">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+              Video generation has witnessed significant advancements, yet evaluating these models remains a challenge. A comprehensive evaluation benchmark for video generation is indispensable for two reasons: 1) Existing metrics do not fully align with human perceptions; 2) An ideal evaluation system should provide insights to inform future developments of video generation. To this end, we present <b>VBench</b>, a comprehensive benchmark suite that dissects "video generation quality" into specific, hierarchical, and disentangled dimensions, each with tailored prompts and evaluation methods. VBench has three appealing properties: <b>1) Comprehensive Dimensions</b>: VBench comprises 16 dimensions in video generation (e.g., subject identity inconsistency, motion smoothness, temporal flickering, and spatial relationship, etc).  The evaluation metrics with fine-grained levels reveal individual models' strengths and weaknesses.  <b>2) Human Alignment</b>: We also provide a dataset of human preference annotations to validate our benchmarks' alignment with human perception, for each evaluation dimension respectively. <b>3) Valuable Insights</b>: We look into current models' ability across various evaluation dimensions, and various content types. We also investigate the gaps between video and image generation models. <b>4) Versatile Benchmarking</b>: VBench++ is designed to evaluate a wide range of video generation tasks, including text-to-video and image-to-video. We introduce a high-quality Image Suite with an adaptive aspect ratio to enable fair evaluations across different image-to-video generation settings. Beyond assessing technical quality, VBench++ evaluates the trustworthiness of generative models, providing a more holistic view of model performance. <b>5) Full Open-Sourcing</b>: We fully open-source VBench, including all prompts, evaluation methods, generated videos, and human preference annotations. We also continually add new video generation models to the VBench leaderboard to drive forward the field of video generation.
+          </p>
+        </div>
+      </div>
+    </div>
 </section>
 <!--/ Abstract. -->
+
 
 
 <!-- Radar_big -->
@@ -299,6 +328,53 @@
         </div>
         <p style="margin-top: 0;">
           We visualize the VBench evaluation results of Gen-2 and Pika. To enhance clarity, we include the results of VideoCrafter-1.0 and Show-1 as references.
+        </p>
+        <p class="is-size-7" style="margin-top: 0;">
+          The values have been normalized for better readability of the chart. The normalization process involves scaling each set of performance values to a common scale between 0.3 and 0.8. The formula used for normalization is: (value - min_value) / (max_value - min_value).
+    </div>
+  </div>
+</section>
+
+
+<!-- Radar_I2V_wo_SVD -->
+<section class="section" style="margin-top:-150px; margin-bottom:50px;">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+        <div class="section-title">
+          <h2 class="title is-3 is-centered">VBench++ Evaluation Results of Image-to-Video Models</h2>
+        </div>
+        <div class="columns is-centered has-text-centered">
+          <div class="column">
+            <div class="publication-img">
+              <img id="architecture" src="assets/vbench/images/dim_results/fig_extension_i2v_wo_svd.jpg" style="width:600px; margin-top:10px;margin-bottom:10px;"/>
+            </div>
+          </div>
+        </div>
+        <p style="margin-top: 0;">
+          We visualize the evaluation results of six image-to-video generation models in VBench++'s I2V dimensions. 
+        </p>
+        <p class="is-size-7" style="margin-top: 0;">
+          The values have been normalized for better readability of the chart. The normalization process involves scaling each set of performance values to a common scale between 0.3 and 0.8. The formula used for normalization is: (value - min_value) / (max_value - min_value).
+    </div>
+  </div>
+</section>
+
+<!-- Radar_trustworthiness_with_sd -->
+<section class="section" style="margin-top:-150px; margin-bottom:50px;">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+        <div class="section-title">
+          <h2 class="title is-3 is-centered">VBench++ Results of the Trustworthiness Dimension</h2>
+        </div>
+        <div class="columns is-centered has-text-centered">
+          <div class="column">
+            <div class="publication-img">
+              <img id="architecture" src="assets/vbench/images/dim_results/radar_trustworthiness_t2v_t2i_4dimensions.jpg" style="width:600px; margin-top:10px;margin-bottom:10px;"/>
+            </div>
+          </div>
+        </div>
+        <p style="margin-top: 0;">
+          We visualize the trustworthiness evaluation results of visual generative models and image generation models. 
         </p>
         <p class="is-size-7" style="margin-top: 0;">
           The values have been normalized for better readability of the chart. The normalization process involves scaling each set of performance values to a common scale between 0.3 and 0.8. The formula used for normalization is: (value - min_value) / (max_value - min_value).
@@ -650,6 +726,60 @@
 </section>
 
 
+<!-- image suite crop pipe -->
+<section class="section" style="margin-top:-100px; margin-bottom:-10px;">
+  <div class="container is-max-desktop" style="width: 33%; max-width: none;">
+    <div class="hero-body">
+        <div class="section-title">
+          <h2 class="title is-3 is-centered">Image Suite Cropping Pipeline of VBench++</h2>
+        </div>
+        <div class="columns is-centered has-text-centered">
+          <div class="column">
+            <div style="margin-top:20px; margin-bottom: 10px;">
+              <img src="assets/vbench/images/dim_results/fig_image_crop_pipeline_vertical.jpg" style="width: 100%;" alt="Image 1">
+              <p style="font-size: 18px; font-weight: bold;">(a) Cropping Pipeline for Portrait Images.</p>
+            </div>
+          
+            <!-- 第二张图片及其标注 -->
+            <div>
+              <img src="assets/vbench/images/dim_results/fig_image_crop_pipeline_horizontal.jpg" style="width: 100%;" alt="Image 2">
+              <p style="font-size: 18px; font-weight: bold;">(b) Cropping Pipeline for Landscape Images.</p>
+            </div>
+          </div>
+        </div>
+        <p style="margin-top: 0;">
+          <b>Image Suite Pipeline for Adaptive Aspect Ratio Cropping.</b> We provide a pipeline that crops images to various aspect ratios while preserving key content. <b>(a) Portrait Images.</b>  If the original image's width is less than its height, it is first cropped to a 1:1 ratio (red bounding box). followed by a second crop to a 16:9 aspect ratio (yellow bounding box). Additional crops interpolate between the 1:1 red box and the 16:9 yellow box to produce other common ratios (1:1, 7:4, 8:5, 16:9). <b>(b) Landscape Images.</b> If the original image's width is greater than its height, we first crop the image to a 16:9 aspect ratio (red bounding box), and further crop the 16:9 image to a 1:1 aspect ratio (yellow bounding box). We then perform additional crops between the 16:9 red box and 1:1 yellow box to obtain the common aspect ratios (1:1, 7:4, 8:5, 16:9).
+        </p>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- image suite stats -->
+<section class="section" style="margin-top:-100px; margin-bottom:-100px;">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+        <div class="section-title">
+          <h2 class="title is-3 is-centered">Content Distribution of Image Suite</h2>
+        </div>
+        <div class="columns is-centered has-text-centered">
+          <div class="column">
+            <div class="publication-img">
+              <img id="architecture" src="assets/vbench/images/dim_results/pie_chart_image_suite.png" style="width:1000px; margin-top:10px;margin-bottom:10px;"/>
+            </div>
+          </div>
+        </div>
+        <!-- <p style="margin-top: 0; margin-bottom: 30px;">
+          Our image suite encompasses a wide variety of content to ensure a comprehensive evaluation.
+        </p> -->
+    </div>
+  </div>
+</section>
+
+
+
+
 
 <!-- BibTeX -->
 <section class="hero is-light is-small" id="BibTeX" >
@@ -698,3 +828,5 @@
 
 </body>
 </html>
+
+
